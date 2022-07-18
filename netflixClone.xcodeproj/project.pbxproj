@@ -15,6 +15,7 @@
 		C77826A82885076800B08AFD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C77826A72885076800B08AFD /* Kingfisher */; };
 		C77826AC2885089E00B08AFD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77826AB2885089E00B08AFD /* Movie.swift */; };
 		C77826AE2885090E00B08AFD /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77826AD2885090E00B08AFD /* StandardHomeMovie.swift */; };
+		C77826B028850A1700B08AFD /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77826AF28850A1700B08AFD /* GlobalHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C77826A4288504DC00B08AFD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C77826AB2885089E00B08AFD /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C77826AD2885090E00B08AFD /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
+		C77826AF28850A1700B08AFD /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C77826A4288504DC00B08AFD /* HomeView.swift */,
 				C77826AB2885089E00B08AFD /* Movie.swift */,
 				C77826AD2885090E00B08AFD /* StandardHomeMovie.swift */,
+				C77826AF28850A1700B08AFD /* GlobalHelpers.swift */,
 			);
 			path = netflixClone;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77826B028850A1700B08AFD /* GlobalHelpers.swift in Sources */,
 				C77826A5288504DC00B08AFD /* HomeView.swift in Sources */,
 				C77826992885033A00B08AFD /* ContentView.swift in Sources */,
 				C77826AE2885090E00B08AFD /* StandardHomeMovie.swift in Sources */,
