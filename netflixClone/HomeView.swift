@@ -14,24 +14,28 @@ struct HomeView: View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
             //main VStack everything will be on top of each other.
-            LazyVStack {
-                ForEach(vm.allCategories, id: \.self) { category in
-                    VStack {
-                        HStack{
-                        Text(category)
-        //                    .foregroundColor(.blue)
-                            Spacer()
-                        }
-                        ScrollView(.horizontal, showsIndicators: false) {
+            ScrollView(showsIndicators: false) {
+                LazyVStack {
+                    ForEach(vm.allCategories, id: \.self) { category in
+                        VStack {
                             HStack{
-                                ForEach(vm.getMovie(forCat: category)) {
-                                    movie in
-                                    StandardHomeMovie(movie: movie)
-                                        .frame(width: 100, height: 200)
-                                        .padding(.horizontal, 20)
-                                }
+                            Text(category)
+                                    .font(.title3)
+                                    .bold()
+            //                    .foregroundColor(.blue)
+                                Spacer()
                             }
-                            
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack{
+                                    ForEach(vm.getMovie(forCat: category)) {
+                                        movie in
+                                        StandardHomeMovie(movie: movie)
+                                            .frame(width: 100, height: 200)
+                                            .padding(.horizontal, 20)
+                                    }
+                                }
+                                
+                            }
                         }
                     }
                 }
