@@ -13,24 +13,26 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
-            
-            ForEach(vm.allCategories, id: \.self) { category in
-                VStack {
-                    HStack{
-                    Text(category)
-    //                    .foregroundColor(.blue)
-                        Spacer()
-                    }
-                    ScrollView(.horizontal, showsIndicators: false) {
+            //main VStack
+            VStack {
+                ForEach(vm.allCategories, id: \.self) { category in
+                    VStack {
                         HStack{
-                            ForEach(vm.getMovie(forCat: category)) {
-                                movie in
-                                StandardHomeMovie(movie: movie)
-                                    .frame(width: 100, height: 200)
-                                    .padding(.horizontal, 20)
-                            }
+                        Text(category)
+        //                    .foregroundColor(.blue)
+                            Spacer()
                         }
-                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack{
+                                ForEach(vm.getMovie(forCat: category)) {
+                                    movie in
+                                    StandardHomeMovie(movie: movie)
+                                        .frame(width: 100, height: 200)
+                                        .padding(.horizontal, 20)
+                                }
+                            }
+                            
+                        }
                     }
                 }
             }

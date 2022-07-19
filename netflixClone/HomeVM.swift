@@ -24,5 +24,6 @@ class HomeVM: ObservableObject {
     
     func setupMovies() {
         movies["Trending Now"] = exampleMovies
+        movies["Stand-Up Comedy"] = exampleMovies.shuffled()
     }
 }
