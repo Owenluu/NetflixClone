@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct HomeView: View {
+    var vm: HomeVM = HomeVM()
+    
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
             
-            ForEach(data: _) { category in
-                Text(category)
+            ForEach(vm.allCategories, id: \.self) { category in
+                VStack {
+                    HStack{
+                    Text(category)
+    //                    .foregroundColor(.blue)
+                        Spacer()
+                    }
+                    ScrollView(.horizontal, showsIndicators: false, content: {
+                        Text("placeholder")})
+                }
             }
         }
+        .foregroundColor(.white)
     }
 }
 
