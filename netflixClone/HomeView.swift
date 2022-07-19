@@ -13,8 +13,8 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
-            //main VStack
-            VStack {
+            //main VStack everything will be on top of each other.
+            LazyVStack {
                 ForEach(vm.allCategories, id: \.self) { category in
                     VStack {
                         HStack{
