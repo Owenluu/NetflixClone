@@ -23,6 +23,6 @@ class HomeVM: ObservableObject {
     }
     
     func setupMovies() {
-        movies["Trending Now"] = [exampleMovie1]
+        movies["Trending Now"] = exampleMovies
     }
 }
