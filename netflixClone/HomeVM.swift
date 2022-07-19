@@ -11,6 +11,9 @@ class HomeVM: ObservableObject {
     // String === category
     @Published var movies: [String: [Movie]] = [:]
     
+    public var allCategories: [String] {
+        return movies.keys.map({ String($0) })
+    }
     init() {
         setupMovies()
     }

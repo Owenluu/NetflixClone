@@ -11,6 +11,10 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
+            
+            ForEach(data: _) { category in
+                Text(category)
+            }
         }
     }
 }
