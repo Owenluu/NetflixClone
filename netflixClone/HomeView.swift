@@ -21,8 +21,17 @@ struct HomeView: View {
     //                    .foregroundColor(.blue)
                         Spacer()
                     }
-                    ScrollView(.horizontal, showsIndicators: false, content: {
-                        Text("placeholder")})
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack{
+                            ForEach(vm.getMovie(forCat: category)) {
+                                movie in
+                                StandardHomeMovie(movie: movie)
+                                    .frame(width: 100, height: 200)
+                                    .padding(.horizontal, 20)
+                            }
+                        }
+                        
+                    }
                 }
             }
         }

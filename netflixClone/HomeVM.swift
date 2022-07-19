@@ -14,6 +14,10 @@ class HomeVM: ObservableObject {
     public var allCategories: [String] {
         return movies.keys.map({ String($0) })
     }
+    
+    public func getMovie(forCat cat: String) -> [Movie] {
+        return movies[cat] ?? []
+    }
     init() {
         setupMovies()
     }
