@@ -26,7 +26,7 @@ struct HomeView: View {
                                 Spacer()
                             }
                             ScrollView(.horizontal, showsIndicators: false) {
-                                HStack{
+                                LazyHStack{
                                     ForEach(vm.getMovie(forCat: category)) {
                                         movie in
                                         StandardHomeMovie(movie: movie)
