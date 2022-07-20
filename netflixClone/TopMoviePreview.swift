@@ -10,6 +10,17 @@ import Kingfisher
 
 struct TopMoviePreview: View {
     var movie: Movie
+    func isCateogryLast(_ cat: String) -> Bool {
+        let catCount = movie.categories.count
+        
+        if let index = movie.categories.firstIndex(of: cat) {
+            if index + 1 != catCount {
+                return false
+            }
+        }
+        
+        return true
+    }
     var body: some View {
         ZStack{
             KFImage(movie.thumbnailURL)
@@ -23,7 +34,7 @@ struct TopMoviePreview: View {
                         HStack {
                             Text(category)
                             Image(systemName: "circle.fill")
-                                .foregroundColor(.blue)
+                                .foregroundColor(.white)
                                 .font(.system(size: 3))
                         }
                     }
