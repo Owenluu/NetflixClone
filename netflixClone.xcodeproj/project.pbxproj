@@ -18,6 +18,7 @@
 		C77826B028850A1700B08AFD /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77826AF28850A1700B08AFD /* GlobalHelpers.swift */; };
 		C77826B22885135300B08AFD /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77826B12885135300B08AFD /* HomeVM.swift */; };
 		C795BA882887BC5600EAAC93 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795BA872887BC5600EAAC93 /* TopMoviePreview.swift */; };
+		C795BA8A2887C2C700EAAC93 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795BA892887C2C700EAAC93 /* SmallVerticalButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C77826AF28850A1700B08AFD /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		C77826B12885135300B08AFD /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		C795BA872887BC5600EAAC93 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
+		C795BA892887C2C700EAAC93 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				C778269C2885033E00B08AFD /* Preview Content */,
 				C77826A4288504DC00B08AFD /* HomeView.swift */,
 				C795BA872887BC5600EAAC93 /* TopMoviePreview.swift */,
+				C795BA892887C2C700EAAC93 /* SmallVerticalButton.swift */,
 				C77826B12885135300B08AFD /* HomeVM.swift */,
 				C77826AB2885089E00B08AFD /* Movie.swift */,
 				C77826AD2885090E00B08AFD /* StandardHomeMovie.swift */,
@@ -171,6 +174,7 @@
 				C795BA882887BC5600EAAC93 /* TopMoviePreview.swift in Sources */,
 				C77826AC2885089E00B08AFD /* Movie.swift in Sources */,
 				C77826972885033A00B08AFD /* netflixCloneApp.swift in Sources */,
+				C795BA8A2887C2C700EAAC93 /* SmallVerticalButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
