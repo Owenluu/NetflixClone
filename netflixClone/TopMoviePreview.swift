@@ -10,6 +10,7 @@ import Kingfisher
 
 struct TopMoviePreview: View {
     var movie: Movie
+    
     func isCateogryLast(_ cat: String) -> Bool {
         let catCount = movie.categories.count
         
@@ -33,9 +34,12 @@ struct TopMoviePreview: View {
                     ForEach(movie.categories, id: \.self) { category in
                         HStack {
                             Text(category)
+                            
+                            if !isCateogryLast(category) {
                             Image(systemName: "circle.fill")
                                 .foregroundColor(.white)
                                 .font(.system(size: 3))
+                            }
                         }
                     }
                 }
