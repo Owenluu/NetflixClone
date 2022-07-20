@@ -16,8 +16,14 @@ struct TopMoviePreview: View {
                 .resizable()
                 .scaledToFill()
                 .clipped()
-            Text("Categories")
+            VStack {
+                Spacer()
+                Text("Strings for Categories")
+                Text("Row of buttons")
+                
+            }
         }
+        .foregroundColor(.white)
         
     }
 }
