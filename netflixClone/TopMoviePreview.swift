@@ -34,6 +34,7 @@ struct TopMoviePreview: View {
                     ForEach(movie.categories, id: \.self) { category in
                         HStack {
                             Text(category)
+                                .font(.footnote)
                             
                             if !isCateogryLast(category) {
                             Image(systemName: "circle.fill")
