@@ -11,11 +11,12 @@ import Kingfisher
 struct TopMoviePreview: View {
     var movie: Movie
     var body: some View {
-        VStack{
+        ZStack{
             KFImage(movie.thumbnailURL)
                 .resizable()
                 .scaledToFill()
                 .clipped()
+            Text("Categories")
         }
         
     }
