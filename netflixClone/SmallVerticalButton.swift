@@ -15,13 +15,23 @@ struct SmallVerticalButton: View {
     
     var isOn: Bool
     
+    var imageName: String {
+        return isOnImage
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            //action
+        }, label: {
+            VStack {
+                Image(systemName: imageName)
+            }
+        })
     }
 }
 
 struct SmallVerticalButton_Previews: PreviewProvider {
     static var previews: some View {
-        SmallVerticalButton(text: String, isOnImage: <#String#>, isOffImage: <#String#>, isOn: <#Bool#>)
+        SmallVerticalButton(text: "My List", isOnImage: "Checkmark", isOffImage: "Plus", isOn: true)
     }
 }
