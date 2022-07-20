@@ -18,7 +18,16 @@ struct TopMoviePreview: View {
                 .clipped()
             VStack {
                 Spacer()
-                Text("Strings for Categories")
+                HStack{
+                    ForEach(movie.categories, id: \.self) { category in
+                        HStack {
+                            Text(category)
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(.blue)
+                                .font(.system(size: 3))
+                        }
+                    }
+                }
                 Text("Row of buttons")
                 
             }
