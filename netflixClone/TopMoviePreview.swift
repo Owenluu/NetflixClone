@@ -6,11 +6,18 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TopMoviePreview: View {
     var movie: Movie
     var body: some View {
-        Text("Hello, World!")
+        VStack{
+            KFImage(movie.thumbnailURL)
+                .resizable()
+                .scaledToFill()
+                .clipped()
+        }
+        
     }
 }
 
